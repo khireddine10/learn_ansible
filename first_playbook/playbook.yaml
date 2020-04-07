@@ -1,0 +1,16 @@
+-
+    name: copy file to web host
+    hosts: [web]
+    tasks:
+      - name: copy web file to target1
+        copy:
+          src: /home/khireddine/Desktop/ansible/first_playbook/web.txt
+          dest: /home/khirou
+-
+    name: copy file to db host
+    hosts: [db]
+    tasks:
+      - name: copy db file to target2
+        copy:
+          src: /home/khireddine/Desktop/ansible/first_playbook/data.txt
+          dest: /home/khirou
