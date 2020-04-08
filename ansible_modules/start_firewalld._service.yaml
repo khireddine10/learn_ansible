@@ -1,0 +1,6 @@
+-
+  name: start services
+  hosts: all
+  tasks:    
+    - name: start firewalld services
+      service: name=firewalld state=started

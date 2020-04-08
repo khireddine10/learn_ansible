@@ -1,0 +1,12 @@
+-
+  name: run command cat with parmeters
+  hosts: all
+  tasks:
+    - name: run cat with chdir parameter
+      command: cat resolv.conf  chdir=/etc
+-
+  name: create a folder in all hosts
+  hosts: all
+  tasks:
+    - name: run mkdir command with creates parameter
+      command: mkdir /home/khirou/test_create_para  creates=/test_create_para
