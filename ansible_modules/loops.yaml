@@ -1,0 +1,11 @@
+
+-
+  name : install multiple packages
+  hosts : all
+  tasks:
+    - yum:  name={{item}} state=present
+      with_items:
+        - httpd
+        - nano
+        - vim
+        - firewalld
